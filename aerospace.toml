@@ -65,8 +65,19 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical = 10
     outer.left = 15
     outer.right = 15
-    outer.top = 20
+    outer.top = [
+      { monitor.main = 20 }
+      , { monitor."LS27A600U" = 55 }
+      , {monitor."LG HDR WFHD" = 50}
+      , 50
+    ]
     outer.bottom = 15
+
+[workspace-to-monitor-force-assignment]
+'1' = ['LS27A600U', 'LG HDR WFHD']
+'2' = ['LS27A600U', 'main']
+'3' = ['LG HDR WFHD', 'main']
+'4' = ['LG HDR WFHD','LS27A600U']
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
